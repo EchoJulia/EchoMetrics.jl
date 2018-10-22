@@ -1,0 +1,8 @@
+name = "EchoMetrics"
+uuid = "24fea464-d61d-11e8-18cd-e39ec79aa639"
+authors = ["Rob Blackwell <rob@robblackwell.com>"]
+version = "0.1.0"
+
+[deps]
+EchogramUtils = "98433ae5-64ae-5f75-927a-48d3260c7151"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
