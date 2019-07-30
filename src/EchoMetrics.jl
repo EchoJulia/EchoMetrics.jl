@@ -7,8 +7,6 @@ module EchoMetrics
 using Statistics
 using EchogramUtils
 
-#export density, abundance, location, dispersion, occupied_area, evenness, aggregation
-
 export mean_volume_backscattering_strength, area_backscattering_strength, centre_of_mass,
     inertia, proportion_occupied,  equivalent_area, index_of_aggregation
 
@@ -18,7 +16,7 @@ export mean_volume_backscattering_strength, area_backscattering_strength, centre
 MacLennan et al. (2002).
 """
 function mean_volume_backscattering_strength(Sv, H) # density
-    sv = db2pow.(skipmissing(Sv))
+    sv = db2pow.(Sv)
     pow2db(sum(sv) / H)
 end
 
@@ -28,7 +26,7 @@ end
 MacLennan et al. (2002).
 """
 function area_backscattering_strength(Sv) # abundance
-    sv = db2pow.(skipmissing(Sv))
+    sv = db2pow.(Sv)
     pow2db(sum(sv))
 end
 
