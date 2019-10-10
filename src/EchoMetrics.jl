@@ -15,9 +15,9 @@ export mean_volume_backscattering_strength, area_backscattering_strength, centre
 
 MacLennan et al. (2002).
 """
-function mean_volume_backscattering_strength(Sv, H) # density
+function mean_volume_backscattering_strength(Sv) # density
     sv = db2pow.(Sv)
-    pow2db(sum(sv) / H)
+    pow2db(sum(sv) / length(sv))
 end
 
 """
@@ -25,8 +25,9 @@ end
 
 MacLennan et al. (2002).
 """
-function area_backscattering_strength(Sv) # abundance
+function area_backscattering_strength(Sv, H) # abundance
     sv = db2pow.(Sv)
+    sv = H * sv / length(sv)
     pow2db(sum(sv))
 end
 
