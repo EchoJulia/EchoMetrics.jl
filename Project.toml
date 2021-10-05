@@ -4,7 +4,7 @@ authors = ["Rob Blackwell <rob@robblackwell.com>"]
 version = "0.1.0"
 
 [deps]
-EchogramUtils = "98433ae5-64ae-5f75-927a-48d3260c7151"
+EchogramUtils = "e6c92fb4-1eaa-58f3-81b2-62c853d22af2"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [extras]
