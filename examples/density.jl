@@ -10,7 +10,7 @@ using EchogramPyPlot
 using PyPlot
 using LaTeXStrings
 using EchogramUtils
-using EchogramColorSchemes
+using ColorSchemes
 
 columns(M) = (view(M, :, i) for i in 1:size(M, 2))
 
@@ -41,9 +41,7 @@ function main()
     fig, axes = subplots(2,1, figsize=(6.5,8.5))
 
     ax = subplot(2,1,1)
-    echogram(Sv38, vmin = -95, vmax=-50, range = maximum(_R), cmap=EK500)
-    cb = plt[:colorbar]()
-    cb[:set_label](L"$S_v$ dB re 1 m$^{-1}$")
+    echogram(Sv38, vmin = -95, vmax=-50, range = maximum(_R), cmap=ColorSchemes.viridis)
     ylabel("Range / m")
 
     ax = subplot(2,1,2)
