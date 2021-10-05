@@ -1,0 +1,9 @@
+[deps]
+EchoMetrics = "24fea464-d61d-11e8-18cd-e39ec79aa639"
+EchogramColorSchemes = "4c5cd976-4938-5223-a900-acc20a7c8507"
+EchogramPyPlot = "cefffc6e-22df-5efe-a096-e879be851ea5"
+EchogramUtils = "e6c92fb4-1eaa-58f3-81b2-62c853d22af2"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+SimradEK60 = "8e323af8-d215-5c39-b262-30cfc2fa9c48"
+SimradEK60TestData = "6560e86b-c63b-5eb7-baae-f1872a4305ea"
